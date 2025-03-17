@@ -1,5 +1,6 @@
 import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
+import project3 from "../assets/projects/project-3.jpg";
 
 
 export const HERO_CONTENT_EN = `I am a dedicated EDI consultant and full-stack developer with a strong foundation in building seamless and efficient integrations. With over a year of hands-on experience, I specialize in designing and implementing EDI integration solutions that enable businesses to exchange data effortlessly across platforms. My expertise includes translating complex EDI file formats, such as EDIFACT and SAP, and crafting custom EDI solutions tailored to meet unique business needs. In addition to my EDI skills, I bring proficiency in front-end technologies like JavaScript and React, back-end development with Python and C, and database management using MySQL and SQLite. I am passionate about delivering innovative and reliable solutions that optimize processes and enhance user experiences.`;
@@ -53,6 +54,7 @@ export const PROJECTS = [
         },
         technologies: ["HTML", "Tailwind CSS", "Python", "Flask", "SQLite", "Bootstrap", "Docker"],
     },
+
     {
         title: {
             en: "Portfolio Website",
@@ -64,5 +66,18 @@ export const PROJECTS = [
             fr: "Un site web personnel présentant des projets, des compétences et des informations de contact.",
         },
         technologies: ["HTML", "CSS", "React", "Bootstrap"],
+    },
+
+    {
+        title: {
+            en: "Movie Recommendation Web App",
+            fr: "Application Web de Recommandation de Films",
+        },
+        image: project3,
+        description: {
+            en: "A movie recommendation web app designed to help users discover trending and recommended movies. Users can browse movies, view detailed information, and save their favorite movies for easy access.",
+            fr: "Une application web de recommandation de films conçue pour aider les utilisateurs à découvrir les films tendances et recommandés. Les utilisateurs peuvent parcourir les films, consulter des informations détaillées et enregistrer leurs films préférés pour un accès facile.",
+        },
+        technologies: ["Next.js", "TypeScript", "Styled Components", "Bootstrap", "Firebase Authentication", "Axios", "RESTful API"],
     },
 ];
