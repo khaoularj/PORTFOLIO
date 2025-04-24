@@ -46,7 +46,7 @@ const Hero = ({ language }) => {
                     <div className="flex justify-center my-2 max-w-xl py-20">
                         <motion.img
                             initial={{ x: 100, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 1, delay: 1.2 }}
-                            src={profilePic} alt="Khaoula Raja" className="w-[300px] h-[400px] rounded-xl" />
+                            src={profilePic} alt="Khaoula Raja" className="w-[300px] h-[450px] rounded-xl" />
                     </div>
                 </div>
             </div>
