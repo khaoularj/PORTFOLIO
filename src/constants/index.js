@@ -1,6 +1,11 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
+// import project1 from "../assets/projects/project-1.jpg";
+// import project2 from "../assets/projects/project-2.jpg";
+// import project3 from "../assets/projects/project-3.jpg";
+import project4 from "../assets/projects/generix_fondital.png";
+import project5 from "../assets/projects/generix_elior.png";
+import project6 from "../assets/projects/generix_osi.png";
+import project7 from "../assets/projects/generix_tognana.png";
+import project8 from "../assets/projects/generix_medial.png";
 
 
 export const HERO_CONTENT_EN = `I am a dedicated EDI consultant and full-stack developer with a strong foundation in building seamless and efficient integrations. With over a year of hands-on experience, I specialize in designing and implementing EDI integration solutions that enable businesses to exchange data effortlessly across platforms. My expertise includes translating complex EDI file formats, such as EDIFACT and SAP, and crafting custom EDI solutions tailored to meet unique business needs. In addition to my EDI skills, I bring proficiency in front-end technologies like JavaScript and React, back-end development with Python and C, and database management using MySQL and SQLite. I am passionate about delivering innovative and reliable solutions that optimize processes and enhance user experiences.`;
@@ -18,7 +23,7 @@ export const CONTACT = {
         fr: "Marrakech, Maroc",
     },
     phoneN: "+212606897825",
-    email: "khaoula.raja1@gmail.com",
+    email: "kraja@marynsoft.com",
 };
 
 
@@ -42,6 +47,93 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+    {
+        title: {
+            en: "EDI Automotive Integrations (FONDITAL)",
+            fr: "Intégrations EDI Automobile (FONDITAL)",
+        },
+        image: project4,
+        description: {
+            en: "Implemented multiple EDI integrations for automotive partners (BMW, AUDI, Jaguar Land Rover, Bricoman). Designed mappings between EDIFACT and SAP IDOC, handling logistics messages such as DELFOR, DELJIT, DESADV, and ORDERS while ensuring compliance with automotive standards (VDA).",
+            fr: "Mise en œuvre de plusieurs intégrations EDI pour des partenaires automobiles (BMW, AUDI, Jaguar Land Rover, Bricoman). Conception de mappings entre EDIFACT et SAP IDOC, gestion des messages logistiques (DELFOR, DELJIT, DESADV, ORDERS) avec respect des standards du secteur automobile (VDA).",        },
+        technologies: ["Generix TradeXpress", "EDIFACT", "SAP IDOC", "DELFOR", "DELJIT", "DESADV","ORDERS",],
+    },
+
+    {
+        title: {
+            en: "EDI Interoperability (ELIOR)",
+            fr: "Interopérabilité EDI (ELIOR)",
+        },
+        image: project5,
+        description: {
+            en: "Developed bidirectional EDI transformations between EURITMO and EDIFACT formats, covering DESADV, INVOIC, ORDERS, and ORDCHG messages to ensure seamless communication between heterogeneous systems.",
+            fr: "Développement de transformations EDI bidirectionnelles entre les formats EURITMO et EDIFACT (DESADV, INVOIC, ORDERS, ORDCHG) afin d'assurer une communication fluide entre systèmes hétérogènes.",
+        },
+        technologies: [
+            "Generix TradeXpress",
+            "EDIFACT",
+            "EURITMO",
+            "Data Mapping",
+        ],
+    },
+
+    {
+        title: {
+            en: "EDI File Processing Automation (O&SI)",
+            fr: "Automatisation de Traitement de Fichiers EDI (O&SI)",
+        },
+        image: project6,
+        description: {
+            en: "Designed an automated EDI file processing pipeline: parsing EDIFACT/TRADACOMS files, extracting metadata (document type, sender, receiver), dynamic file renaming, and routing to partners via FTP and MPRP.",
+            fr: "Conception d’un pipeline automatisé de traitement de fichiers EDI : parsing des fichiers EDIFACT/TRADACOMS, extraction des métadonnées (type de document, expéditeur, destinataire), renommage dynamique et routage via FTP et MPRP.",
+        },
+        technologies: [
+            "EDIFACT",
+            "TRADACOMS",
+            "FTP",
+            "MPRP",
+            "File Processing",
+        ],
+    },
+
+    {
+        title: {
+            en: "UBL & API Integration (TOGNANA)",
+            fr: "Intégration UBL & API (TOGNANA)",
+        },
+        image: project7,
+        description: {
+            en: "Built integrations between UBL and EURITMO formats with API-based message retrieval. Implemented message classification (Orders, RECADV) and processing workflows, enabling real-time data exchange.",
+            fr: "Mise en œuvre d’intégrations entre les formats UBL et EURITMO avec récupération des messages via API. Implémentation de la classification (Orders, RECADV) et des workflows de traitement pour un échange de données en temps réel.",
+        },
+        technologies: [
+            "UBL",
+            "EURITMO",
+            "API",
+            "JSON",
+            "Data Transformation",
+        ],
+    },
+
+    {
+        title: {
+            en: "CSV Data Transformation (Medial International)",
+            fr: "Transformation de Données CSV (Medial International)",
+        },
+        image: project8,
+        description: {
+            en: "Developed CSV-to-CSV transformation processes by applying business rules to restructure and validate data for downstream systems.",
+            fr: "Développement de processus de transformation CSV vers CSV avec application de règles métiers pour structurer et valider les données.",
+        },
+        technologies: [
+            "CSV",
+            "Data Processing",
+            "ETL / Data Transformation",
+        ],
+    },
+
+    // Personal Projects
+    /*
     {
         title: {
             en: "Task Management Web App",
@@ -79,5 +171,5 @@ export const PROJECTS = [
             fr: "Une application web de recommandation de films conçue pour aider les utilisateurs à découvrir les films tendances et recommandés. Les utilisateurs peuvent parcourir les films, consulter des informations détaillées et enregistrer leurs films préférés pour un accès facile.",
         },
         technologies: ["Next.js", "TypeScript", "Styled Components", "Bootstrap", "Firebase Authentication", "Axios", "RESTful API"],
-    },
+    }*/
 ];

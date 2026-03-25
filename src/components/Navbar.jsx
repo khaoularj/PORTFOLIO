@@ -1,6 +1,6 @@
-import logo from "../assets/KrajaLogo.png";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+// import logo from "../assets/KrajaLogo.png";
+import profile from "../assets/KrajaProfile.png";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import englishCvFile from "../assets/KHAOULA_RAJA_CV_EN.pdf";
 import frenchCvFile from "../assets/KHAOULA_RAJA_CV_FR.pdf";
 
@@ -11,7 +11,8 @@ const Navbar = ({ language, toggleLanguage }) => {
     return (
         <nav className="mb-20 flex items-center justify-between py-6">
             <div className="flex flex-shrink-0 items-center">
-                <img className="mx-2 w-10" src={logo} alt="logo" />
+                {/* <img className="mx-2 w-10" src={profile} alt="profile" /> */}
+                <img className="mx-4 w-20 h-20 rounded-full object-cover border border-neutral-700 shadow-sm" src={profile} alt="profile" />
             </div>
 
             <div className="m-8 flex items-center justify-center gap-4 text-2xl">

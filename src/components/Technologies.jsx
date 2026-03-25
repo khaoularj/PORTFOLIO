@@ -6,6 +6,8 @@ import { SiC } from 'react-icons/si';
 import { SiMysql } from 'react-icons/si';
 import { SiSqlite } from 'react-icons/si';
 import { SiDocker } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
+import { SiPostman } from "react-icons/si";
 import { motion } from "motion/react";
 
 const iconVariants = (duration) => ({
@@ -61,6 +63,17 @@ const Technologies = () => {
                     className="rounded-2xl border-4 border-neutral-800 p-4">
                     <SiDocker className='text-7xl' color="#2496ED" />
                 </motion.div>
+
+                <motion.div variants={iconVariants(3)} initial="initial" animate="animate"
+                    className="rounded-2xl border-4 border-neutral-800 p-4">
+                    <SiTypescript className='text-7xl' color="#3178C6" />
+                </motion.div>
+
+                <motion.div variants={iconVariants(4)} initial="initial" animate="animate"
+                    className="rounded-2xl border-4 border-neutral-800 p-4">
+                    <SiPostman className='text-7xl' color="#FF6C37" />
+                </motion.div>
+
             </motion.div>
         </div>
     )
